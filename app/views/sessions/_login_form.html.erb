@@ -1,0 +1,13 @@
+<h1>ログイン</h1>
+<a href="">アカウントをお持ちでない方はこちら</a>
+<a href="">facebook</a>
+<a href="">twitter</a>  
+<%= bootstrap_form_tag :session do |form| %>
+  <%= form.email_field :email, required: true %>
+  <%= form.password_field :password, required: true %>
+  <a href="">パスワードをお忘れの方はこちら</a>
+
+  <% if flash.alert %><p class="alert"><%= flash.alert %></p><% end %>
+  <%= form.submit "ログイン", class: 'btn btn-success'%>
+
+<% end %>

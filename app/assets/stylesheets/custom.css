@@ -1,0 +1,851 @@
+/* COLOUR REFERENCES
+
+Gray:  #f1f2f3
+Pink:  #ff9595
+Rouge: #ff4d4d
+Blue:  #84c1ca
+
+*/
+
+
+/* ==== GENERAL ==== */
+
+
+body {
+	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-size: 12px;
+    margin-top:105px;
+}
+
+/* ==== GLOBAL ==== */
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h2 {
+    font-size: 24px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: 'ＭＳ Ｐ明朝', 'MS PMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
+    font-weight: normal;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+section{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+
+.separator{
+    background-image: url(../img/sep3.png);
+    background-size: 250px auto;
+    height: 30px;
+    background-repeat: no-repeat;
+    display: inherit;
+    background-position: center center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+
+.breadcrumb{
+    background: none;
+    margin-top:0;
+}
+
+
+/* ==== navbar ==== */
+.navbar-default {
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 0;
+    padding: 10px 0 10px 0;
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-brand {
+    padding-top:10px; 
+}
+
+.loginsignin{
+    padding-top:10px;
+    padding-bottom: 5px;
+    text-align:center;
+}
+
+.loginsignin li {
+	display:inline;
+	list-style-type:none;
+	margin-right:6px;
+	padding-left:10px;
+}
+.loginsignin li+li {
+	border-left:1px solid #999;
+}
+
+
+.thumbnail{
+    border-radius: 0;
+    padding: 8px 8px 8px 8px;
+}
+
+/* ==== button ==== */
+
+.btn-trial{
+    background-color: #ff4d4d;
+    margin:8px 10px;
+    color: #FFFFFF;
+}
+
+.btn-trial:hover{
+    background-color: #ff6464;
+    color: #FFFFFF;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.btn-detail{
+    background-color: #84c1ca;
+    padding-right:20px;
+    padding-left:20px;
+    margin:10px 0px 20px 0px;
+    color: #FFFFFF;
+}
+
+.btn-detail:hover{
+    background-color: #4e9aa5;
+    color: #FFFFFF;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+
+
+/* ==== HERO ==== */
+
+#hero {
+	background: url('../img/temp_hero2.jpg');
+    background-position:  50% 0%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% cover;
+	min-height: 720px;
+	position: relative;
+    display: table;
+	width: 100%;
+    height: 100%;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+    margin-top:0px;
+    padding-bottom: 0;
+}
+
+
+.hero-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    text-align: center;
+    margin: 0 25px 0px 25px;
+}
+
+.hero-text h1{
+    margin-bottom:15px;
+}
+
+
+/* ==== DESIGNEX ==== */
+#designex{
+    padding-bottom: 30px;
+}
+ #designex .thumbnail_container{
+    height: 330px;
+    text-align: center;
+    padding-right:20px;
+    padding-left: 20px;
+}
+
+.thumbnail {
+    display: inline;
+}
+
+.carousel-control.left,.carousel-control.right{
+    background-image:none;
+    margin-top:10%;
+    width:5%;
+}
+
+.text-box-wrapper{
+    text-align: center;
+    display: inline;
+}
+.text-box{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+    padding-left:3px;
+}
+
+.text-box .designpattern {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-box .designmonth {
+    color:#ff9595;
+}
+
+.text-box .designconcept {
+    margin-top: 5px; 
+    font-size: 10px;
+}
+
+#designex a.overwhite{
+    background-color:#ffffff;
+    display:block;
+}
+
+#designex a.overwhite:hover img{
+    cursor:pointer;
+    filter: alpha(opacity=60);        /* ie lt 8 */
+    -ms-filter: "alpha(opacity=60)";  /* ie 8 */
+    -moz-opacity:0.6;                 /* FF lt 1.5, Netscape */
+    -khtml-opacity: 0.6;              /* Safari 1.x */
+    opacity:0.6;
+    zoom:1;
+}
+
+.gotodesignex{
+    text-align: center;
+}
+
+
+/* ==== LINEUP ==== */
+
+#lineup {
+    background: url('../img/paper_fibers2.png') top left repeat;
+    padding-bottom: 70px;
+    color: #777777;
+}
+
+.crown {
+    text-align: center;
+}
+.crown img{
+    width:100px;
+    height:auto;
+}
+
+.crown-responsive {
+    text-align: center;
+}
+.crown-responsive img{
+    width:100px;
+    height:auto;
+    display: none;
+}
+
+
+.lineup-type-name {
+    padding: 2px 20px 0px 15px;
+    background-color: #FFFFFF;
+}
+
+.lineup-type-name h3{
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    padding:10px 0 0 10px;
+    font-size:2em;
+}
+
+.lineup-type-name h3 .subcopy{
+    margin-top:2px;
+    font-size:15px;
+}
+.lineup-type-name h3 .subcopy i{
+    color:#ffce00;
+}
+
+.albumcontainer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px 0px 15px;
+    border: 2px;
+    border-color: #2f2f2f;
+    margin-bottom: 30px;
+}
+.albumcontainer hr{
+    margin: 2px 0 2px 0;
+}
+
+.albumcontainer p, h3{text-align: left;}
+
+.albumcontainer a{margin: 10px 0 10px 0;}
+
+.lineup-price{
+    padding: 15px 0 5px 0;
+}
+.lineup-price p {
+    font-size:12px;
+    line-height: 28px;
+}
+.price{
+    font-size: 30px;
+    margin:0 5px 0 10px;
+}
+
+.lineup-detail {
+    margin-top:20px;
+}
+
+/* ==== PROMISE ==== */
+
+#promise {
+	background: url('../img/temp_promise.jpg') 50% 0% no-repeat;
+    -moz-background-size:100% auto;
+    background-size:1903px 773px cover;
+	width: 100%;
+    min-height: 600px;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+.promise-text {
+    margin:0 5% 0 5%;
+}
+
+
+/* ==== TESTIMONIAL ==== */
+#testimonial {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.testimonial_wrapper{
+    margin-bottom: 20px;
+    padding-right:5%;
+    padding-left: 5%;
+}
+
+.testimonial_wrapper img{
+    width:100px;
+    margin-top:10px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+#testimonial p:after {
+    content: '';
+    position: relative;
+    border-bottom: 2px solid #333542;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 70px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.star {
+    margin-bottom:10px;
+    font-size: 2.5em;
+    color:#e67e22;
+}
+
+
+/* ==== PROCESS ==== */
+#process{
+    background: url('../img/paper_fibers2.png') top left repeat;
+    padding-bottom: 0px;
+}
+.process-wrapper{
+    margin:0 10% 0 10%;
+}
+
+.numbar-wrapper {
+    text-align: center; 
+    margin:0;
+    padding-left: 50px;
+}
+.num {
+    text-align: center;
+	font-size: 20px;
+	color: white;
+	line-height: 40px;
+	height: 40px;
+	width: 40px;
+	background: #84c1ca;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+.numbar{
+    padding: 0;
+    height: 60px;
+    border-left: solid 5px #84c1ca;
+    margin-left: 3px;    
+}
+.text100{height: 100px;}
+
+
+
+.saitan {
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding:0 5% 0 5%;
+}
+.saitan p{
+    font-size: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.saitan span{
+    color: red;
+}
+
+/* ==== FOOTER ==== */
+footer{background-color: #f1f2f3;}
+footer p{margin-top:15px;}
+
+.footer_wrapper {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer_cont{
+    border-left: 1px solid #f1f2f3;
+    padding:0 10px 0 10px;
+}
+.footer_cont:last-child{
+    border-right: 1px solid #f1f2f3;
+}
+.footer_cont h4{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer_cont ul{padding-top:10px;}
+
+.footer-text{
+    padding-left: 10px;
+}
+/* ==== MODAL ==== */
+.modal-dialog {padding-top: 80px;}
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+.modal-header{
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+.close{
+    font-size: 18px;
+}
+
+
+
+/* ==== DESIGNEX Page ==== */
+
+.designex-page #designex{
+    padding-top:20px;
+    
+}
+.designex-header{
+    background: url('../img/paper_fibers2.png') top left repeat;
+    margin-top:0;
+}
+.designex-page #designex .copy{
+    text-align: left;
+}
+
+.designex-page h3{
+    text-align: left;
+    font-size:35px;
+    padding-top:10px;
+    padding-left:10px;
+}
+
+.copy i{
+    padding-left:15px;
+    font-size:25px;
+    vertical-align: middle;
+}
+
+.fa-twitter-square{
+    color: #55acee;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.page-top-copy{
+    padding-top:15px;
+    padding-left:10px;
+    font-size: 1.2em;
+}
+
+.labelname{
+    padding-top:9px;
+    margin-bottom: -5px;
+    height: 34px;
+    min-width: 60px;
+}
+
+.designex-page .thumbnail{
+    border: 0;
+    padding:0;
+}
+.thumbnail_container2{
+    padding: 8px 8px 0px 8px;
+    border: 1px solid #ddd;
+    margin-top:15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.pageviews, .pagelike{
+    color: #777777;
+    font-size:8px;
+}
+
+.designex-buttons{
+    padding: 10px 0 10px 10px;
+}
+.designex-buttons .btn-default{
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+.garalley{
+    padding:0 5% 0 5%;
+}
+
+/*mixitUP*/
+.containermix {
+	padding:2%;
+	text-align:justify;
+}
+
+.containermix .mix,
+.containermix .gap {
+	display:inline-block;
+	width:14.5%;
+}
+
+#Container .mix {
+	display:none;
+}
+
+
+/* ==== LINEUP Page ==== */
+.lineup-page #lineup{
+    padding-top:40px;
+}
+
+.lineup-page .copy,
+.product-detail{
+    text-align: center; 
+    padding:0 10% 10px 10%;
+}
+
+.lineup-page .copy ul{
+    font-size:25px;
+    margin-top:40px;
+    margin-bottom: 20px;    
+}
+.product-menu{
+    display: inline;
+    margin: 0 2%;
+}
+.product-name{
+    font-size:4em;
+    text-align: center;
+    color: #333;
+}
+.standard{
+    text-align: center;
+}
+.product-size{
+    padding: 50px 0 50px 0;
+}
+#lineup h1{
+    padding: 20px 0 20px 0;
+    margin: 0;
+    font-size:5em;
+    font-family: Myriad;  
+}
+.product-detail{
+    font-size:1.5em;
+}
+
+.product-designex-wrapper{
+    margin-top:90px;
+    margin-bottom: 120px;
+    padding: 0px 2% 90px 2%;
+}
+.product-designex-wrapper .thumbnail_container{
+    height:200px;
+}
+
+.lineup-page .pricetable h3{
+    margin-bottom:10px;
+    height: 30px;
+}
+
+.order{
+    text-align: center;
+}
+
+
+/* ==== Slick ====*/
+.slick-prev::before, .slick-next::before {
+    color:#a0a0a0;
+    font-size:40px;
+}
+.slick-prev::before {content:"<";}
+.slick-next::before {content:">";}
+
+.slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto\9; /* ie8 */
+    margin: 0 auto;
+}
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (min-width: 992px) and (max-width : 1200px) {
+    #hero{
+        min-height: 600px;
+    }
+    .hero-text h1{
+        font-size:2.5em;
+    }
+    
+    #designex .thumbnail_container{
+    height: 280px;
+    }
+    
+    .footer_cont h4{
+        font-size:16px;
+    }
+}
+@media screen and (max-width : 991px) {
+    #hero{
+        min-height: 550px;
+    }
+    
+    .hero-text h1{
+        font-size:2.5em;
+    }
+    
+    #designex .thumbnail_container{
+    height: 310px;
+    }
+    
+    #lineup .albumcontainer {
+    padding: 20px 20px 0px 20px;
+    }
+    
+    #lineup .album-wrapper{
+        padding: 0 10% 0 10%;
+        
+    }
+    
+    #lineup .crown img{
+        display: none;
+    }
+    #lineup .crown-responsive img{
+        display: inline;
+    }
+    
+    #promise{
+        background-size: 1123.4px 500px;
+        min-height: 500px;
+    }
+    .footer_cont{
+        padding: 0 2% 5% 2%;
+    }
+    .footer_cont h4{
+        font-size:14px;
+    }   
+        
+    /*mixitUP*/
+    .containermix {
+        padding:1.5%;
+    }
+
+    .containermix .mix,
+    .containermix .gap {
+        width:31.5%;
+    }
+
+
+    
+}
+@media screen and (max-width : 768px) {
+    #hero{
+        height: 0;
+        background: url('../img/temp_hero2.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .hero-text h1{
+        font-size:2.2em;
+    }
+    
+    #designex .thumbnail_container{
+        padding-right:20%;
+        padding-left:20%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+    #lineup .crown img{
+        display: none;
+    }
+    
+    #promise{
+        background-size: 898.72px 400px;
+        min-height: 400px;
+    }
+    
+    #process .process-wrapper{
+        margin: 0 10% 0 5%;
+    }
+    
+    #process .numbar{
+    height: 80px;
+    }
+    #process .text100{height: 120px;}
+    #process .numbar-wrapper {
+    padding-left: 20px;
+    }
+    .footer_cont{
+        padding-top:20px;
+        border-bottom:0.5px solid #FFFFFF;
+    }
+    .footer-text{
+        text-align: center;
+        padding: 0;
+    }
+    .footer-links{
+        text-align: center;
+    }
+    
+    /*mixitUP*/
+    .containermix {
+        padding:2.5%;
+    }
+
+    .containermix .mix,
+    .containermix .gap {
+        width:47.5%;
+    }
+
+}
+@media screen and (max-width : 568px){
+     
+
+    h2 {
+        font-size: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    #hero {
+        min-height: 300px;
+        background-size: cover;
+    }
+    #designex{
+        margin-top:20px;
+    }
+    
+    #designex .thumbnail_container{
+        padding-right:12%;
+        padding-left:12%;
+    }
+    #lineup .album-wrapper{
+        padding: 0 7% 0 7%;
+    }
+    #lineup .albumcontainer {
+        padding: 10px 10px 0px 10px;
+    }
+    .lineup-type-name h3{
+    font-size:1.5em;
+    }
+    .lineup-typa-name .subcopy{
+        margin-bottom:5px;
+    }
+    
+    #lineup .crown img{
+        display: none;
+    }
+    #promise{
+        background-size: 674.04px 300px;
+        min-height: 300px;
+    }
+    #process h4{
+        font-size:14px;
+    }
+    
+    #process .num {
+        font-size: 15px;
+        line-height: 30px;
+        height: 30px;
+        width: 30px;
+    }
+    #process .text100{height: 130px;}
+    #process .numbar-wrapper {
+    padding-left: 5%;
+    }
+    #process .numbar{
+        margin-left: -1px;    
+        height:100px;
+    }
+    
+    /*mixitUP*/
+    .containermix {
+        padding:5%;
+    }
+
+    .containermix .mix,
+    .containermix .gap {
+        width:95%;
+    }
+    
+    .designex-page h2,
+    .lineup-page h2{
+    margin-left:0px;
+}
+
+}

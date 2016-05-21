@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      example: デザイン例
+    attributes:
+      example:
+        name: 名前
+        design: デザイン
+        album: アルバム

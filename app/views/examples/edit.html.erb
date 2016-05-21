@@ -1,0 +1,15 @@
+<% @page_title = 'デザイン例の追加' %>
+
+<section>
+
+  <div class="container">
+
+    <%= bootstrap_form_for(@example) do |form| %>
+    <%= render 'form', form: form %>
+    <%= form.submit class: 'btn btn-success'%>
+  
+    or
+    <%= link_to "Cancel", "/examples" %>
+    <% end %>
+  </div>
+</section>

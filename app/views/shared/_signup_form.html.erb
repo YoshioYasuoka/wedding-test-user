@@ -1,0 +1,15 @@
+<h1>新規会員登録</h1>
+<a href="">すでにアカウントをお持ちの方はこちら</a>
+<a href="">facebook</a>
+<a href="">twitter</a>  
+
+<%= bootstrap_form_for(@user) do |form| %>
+    
+    <%= form.text_field :name, required: true %>
+    <%= form.email_field :email, required: true %>
+    <%= form.text_field :password, required: true %>
+    <%= form.text_field :password_confirmation, label: "Password Again", required: true %>
+    <% if flash.alert %><p class="alert"><%= flash.alert %></p><% end %>
+    <%= form.submit "無料でアカウントを登録する", class: 'btn btn-success'%>
+
+<% end %>

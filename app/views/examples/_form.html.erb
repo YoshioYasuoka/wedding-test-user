@@ -1,0 +1,14 @@
+    <%= render 'shared/errors', obj: @example %>
+    
+    <%= form.text_field :name, required: true %>
+    
+    <% design_options=['シンプル','スタイリッシュ','エレガント', 'ポップ'] %>
+    <%= form.select :design, design_options %>
+    
+    <% album_options=['Standard','Basic','Premium'] %>
+    <%= form.select :album, album_options %>
+    
+    <%= form.number_field :pageview, required: true %>
+    
+    <%= form.number_field :like, required: true %>
+

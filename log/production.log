@@ -1,0 +1,25 @@
+D, [2016-05-20T18:33:58.947426 #2321] DEBUG -- :   [1m[36m (12.9ms)[0m  [1mCREATE TABLE "examples" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "design" text, "album" text, "pageview" integer, "like" integer, "new" integer) [0m
+D, [2016-05-20T18:33:59.024599 #2321] DEBUG -- :   [1m[35m (14.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+D, [2016-05-20T18:33:59.025080 #2321] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2016-05-20T18:33:59.035346 #2321] DEBUG -- :   [1m[35m (9.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+D, [2016-05-20T18:33:59.036059 #2321] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+D, [2016-05-20T18:33:59.046512 #2321] DEBUG -- :   [1m[35m (10.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160518015748')
+D, [2016-05-20T18:33:59.049260 #2321] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+D, [2016-05-20T18:33:59.078890 #2321] DEBUG -- :   [1m[35mSQL (14.2ms)[0m  DELETE FROM "examples"
+D, [2016-05-20T18:33:59.086083 #2321] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2016-05-20T18:33:59.122030 #2321] DEBUG -- :   [1m[35mExample Exists (0.3ms)[0m  SELECT  1 AS one FROM "examples" WHERE "examples"."name" = 'example1' LIMIT 1
+D, [2016-05-20T18:33:59.123622 #2321] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "examples" ("name", "design", "album", "pageview", "like", "new") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "example1"], ["design", "simple"], ["album", "standard"], ["pageview", 1000], ["like", 200], ["new", 1]]
+D, [2016-05-20T18:33:59.135302 #2321] DEBUG -- :   [1m[35m (11.1ms)[0m  commit transaction
+D, [2016-05-20T18:33:59.137576 #2321] DEBUG -- :   [1m[36m (1.6ms)[0m  [1mbegin transaction[0m
+D, [2016-05-20T18:33:59.138691 #2321] DEBUG -- :   [1m[35mExample Exists (0.2ms)[0m  SELECT  1 AS one FROM "examples" WHERE "examples"."name" = 'example2' LIMIT 1
+D, [2016-05-20T18:33:59.139598 #2321] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "examples" ("name", "design", "album", "pageview", "like", "new") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "example2"], ["design", "simple"], ["album", "standard"], ["pageview", 2000], ["like", 250], ["new", 0]]
+D, [2016-05-20T18:33:59.150283 #2321] DEBUG -- :   [1m[35m (10.2ms)[0m  commit transaction
+D, [2016-05-20T18:33:59.151035 #2321] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2016-05-20T18:33:59.152074 #2321] DEBUG -- :   [1m[35mExample Exists (0.3ms)[0m  SELECT  1 AS one FROM "examples" WHERE "examples"."name" = 'example3' LIMIT 1
+D, [2016-05-20T18:33:59.153128 #2321] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "examples" ("name", "design", "album", "pageview", "like", "new") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "example3"], ["design", "pop"], ["album", "basic"], ["pageview", 100], ["like", 20], ["new", 0]]
+D, [2016-05-20T18:33:59.162869 #2321] DEBUG -- :   [1m[35m (9.2ms)[0m  commit transaction
+D, [2016-05-20T18:33:59.163621 #2321] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+D, [2016-05-20T18:33:59.164759 #2321] DEBUG -- :   [1m[35mExample Exists (0.2ms)[0m  SELECT  1 AS one FROM "examples" WHERE "examples"."name" = 'example4' LIMIT 1
+D, [2016-05-20T18:33:59.165806 #2321] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "examples" ("name", "design", "album", "pageview", "like", "new") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "example4"], ["design", "pop"], ["album", "premium"], ["pageview", 15], ["like", 2], ["new", 1]]
+D, [2016-05-20T18:33:59.180422 #2321] DEBUG -- :   [1m[35m (14.2ms)[0m  commit transaction
+D, [2016-05-20T18:33:59.181738 #2321] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "examples"[0m
